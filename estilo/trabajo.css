@@ -2,20 +2,46 @@
 Daniel Suárez - UO276467
 Descripción de los estilos
 **************************/
+body {
+    margin: 8px;
+}
 header {
     background-color: #FF5733;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
 }
 aside {
-    background-color: antiquewhite
+    background-color: antiquewhite;
+    font-size: 2em;
+    text-align: center;
+}
+nav{
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    border-style: dotted;
+    border-color: blue;
 }
 main {
     background-color:darkgray;
+    text-align: justify;
+}
+section {
+    background-color:darkseagreen;
 }
 h2 {
     background-color:cornflowerblue;
 }
+ul {
+    display: block;
+    list-style-type:circle;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+}
+
 footer{
-    background-color:darkseagreen;
+    background-color:khaki;
 }
 
 
