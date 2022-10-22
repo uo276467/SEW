@@ -28,7 +28,7 @@ main {
     background-color:ivory;
 }
 section {
-    background-color:darkseagreen;
+    background-color:lemonchiffon;
 }
 h2#fyd {
     background-color:cornflowerblue;
@@ -39,9 +39,6 @@ ul {
     margin-block-start: 1em;
     margin-block-end: 1em;
     padding-inline-start: 40px;
-}
-table{
-    background-color: ;
 }
 footer{
     background-color:khaki;
