@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Daniel Suárez de la Roza">
+    <meta name ="description" content ="Conceptos clave de Embers.js">
+    <meta name ="keywords" content ="Embers.js, conceptos clave">
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0">
+
+    <title>Embers.js - Conceptos clave</title>
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Embers.js</h1>
+        <picture>
+            <img id="logo" src="multimedia/emberjs.png" alt="Embers.js">
+        </picture>
+        <p>Un framework productivo</p>
+    </header>
+    <nav>
+        <a title="Principal" accesskey="P" tabindex="1" href="index.html">Página principal</a>
+        <a title="Conceptos" accesskey="C" tabindex="2" href="conceptos.html">Conceptos</a>
+        <a title="Modelos" accesskey="M" tabindex="3" href="modelos.html">Modelos</a>
+        <a title="Formulario" accesskey="F" tabindex="4" href="formulario.html">Formulario</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Conceptos clave</h2>
+            <p>Para aprender a usar Embers es imprescindible entender los siguientes conceptos clave:</p>
+            <ul>
+                <li>Rutas: en Ember, el estado de una aplicación está representado por una URL. Cda URL 
+                tiene un objeto de ruta correspondiente que controla lo que es visible para el usuario.
+                </li>
+                <li>Modelos: cada ruta tiene un modelo asociado, que contiene los datos asociados al estado actual 
+                de la aplicación.
+                </li>
+                <li>Plantillas: las plantillas se utilizan para construir el HTML de la aplicación y se escriben 
+                con el lenguaje de plantillas HTMLBars.
+                </li>
+                <li>Componentes: un componente es una etiqueta HTML personalizada. El comportamiento se implementa 
+                usando JavaScript y su apariencia se define usando plantillas HTMLBars
+                </li>
+                <li>Servicios: los servicios son objetos singleton para almacenar datos de larga duración, 
+                como sesiones de usuario.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Ember data</h3>
+            <p>La mayoria de las aplicaciones de Ember utilizan Ember Data, una biblioteca de persistencia
+                de datos que proporciona muchas facilidades de un mapeo relacional de objetos (ORM). Sin embargo,
+                también es posible utilizar Ember sin Ember Data.
+            </p>
+            <p>Ember data asigna modelos del lado del cliente a datos del lado del servidor. A continuación, puede
+                cargar y guardar registros y sus relaciones sin ninguna configuración a través de una API JSON RESTful
+                que implementa la especificación de la API JSON, siempre que se sigan cietas convenciones.
+            </p>
+            <p>La primera versión estable de Ember Data se lanzó el 18 de junio de 2015.
+            </p>
+        </section>
+    </main>
+    <aside>
+        <article>
+            <h3>Ember 4.7 Lanzado</h3>
+            <p>5 sept 2022</p>
+            <p>Hoy el proyecto ember está lanzando la versión 4.7 de Embers.js, Embers Data y Ember CLI.</p>
+        </article>
+        <article>
+            <h3>Ember 4.6 Lanzado</h3>
+            <p>29 jul 2022</p>
+            <p>Hoy el proyecto ember está lanzando la versión 4.6 de Embers.js, Embers Data y Ember CLI.</p>
+        </article>
+    </aside>
+    <footer>
+        <audio controls>
+            <source src="multimedia/background_music1.mp3" type="audio/mpeg">
+            <source src="multimedia/background_music1.wav" type="audio/mpeg">
+        </audio>
+        <br>
+        <address id="autor">
+            Página web hecha por Daniel Suárez de la Roza
+        </address>
+    </footer>
+</body>
+</html>
