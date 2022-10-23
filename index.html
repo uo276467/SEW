@@ -17,22 +17,25 @@
     <title>Embers.js</title>
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
 </head>
 
 <body>
     <!-- Datos con el contenidos que aparece en el navegador -->
-    <header>
+    <header id="header">
         <h1>Embers.js</h1>
+        <picture>
+            <img id="logo" src="multimedia/emberjs.png" alt="Embers.js">
+        </picture>
+        <p>Un framework productivo</p>
     </header>
-    <aside>
-        <nav>
-            <a title="Principal" accesskey="P" tabindex="1" href="index.html">Página principal</a>
-            <a title="Conceptos" accesskey="C" tabindex="2" href="conceptos.html">Conceptos</a>
-            <a title="Modelos" accesskey="M" tabindex="3" href="modelos.html">Modelos</a>
-            <a title="Formulario" accesskey="F" tabindex="4" href="formulario.html">Formulario</a>
-        </nav>
-    </aside>
-    <main>
+    <nav>
+        <a title="Principal" accesskey="P" tabindex="1" href="index.html">Página principal</a>
+        <a title="Conceptos" accesskey="C" tabindex="2" href="conceptos.html">Conceptos</a>
+        <a title="Modelos" accesskey="M" tabindex="3" href="modelos.html">Modelos</a>
+        <a title="Formulario" accesskey="F" tabindex="4" href="formulario.html">Formulario</a>
+    </nav>
+    <main id="main">
         <section>
             <h2>¿Qué es Embers.js?</h2>
             <p><a href="https://emberjs.com/">Embers.js</a> es un framework web de código abierto en JavaScript que utiliza un patrón 
@@ -44,24 +47,38 @@
         </section>
         <section>
             <h2 id="fyd">Filisofía y diseño</h2>
-            <p>Según la empresa, Ember se diseñó en torno a cuatro ideas clave: centrarse en aplicaciones web 
+            <p>Según la empresa, Embers se diseñó en torno a cuatro ideas clave: centrarse en aplicaciones web 
                 ambiciosas, productividad desde el primer momento, estabilidad sin estancamiento y previsión de 
                 futuros estándares web.
             </p>
-            <video src="multimedia/introduction.mp4" controls preload="auto">
+            <video id="vintro" src="multimedia/introduction.mp4" controls preload="auto">
             </video>
+            <footer>
+                <p><a href="https://guides.emberjs.com/release/">Guía para aprender a usar Embers.js</a></p>
+            </footer>
         </section>
-        <p><a href="https://guides.emberjs.com/release/">Guía para aprender a usar Embers.js</a></p>
     </main>
-    <footer>
-        <picture>
-            <img src="multimedia/emberjs.png" alt="Embers.js">
-        </picture>
-        <br>
+    <aside>
+        <article>
+            <h3>Ember 4.7 Lanzado</h3>
+            <p>5 sept 2022</p>
+            <p>Hoy el proyecto ember está lanzando la versión 4.7 de Embers.js, Embers Data y Ember CLI.</p>
+        </article>
+        <article>
+            <h3>Ember 4.6 Lanzado</h3>
+            <p>29 jul 2022</p>
+            <p>Hoy el proyecto ember está lanzando la versión 4.6 de Embers.js, Embers Data y Ember CLI.</p>
+        </article>
+    </aside>
+    <footer id="footer">
         <audio controls>
-            <source src="multimedia/backgorund_music1.mp3" type="audio/mpeg">
-            <source src="multimedia/background_music2.mp3" type="audio/mpeg">
+            <source src="multimedia/background_music1.mp3" type="audio/mpeg">
+            <source src="multimedia/background_music1.wav" type="audio/mpeg">
         </audio>
+        <br>
+        <address id="autor">
+            Página web hecha por Daniel Suárez de la Roza
+        </address>
     </footer>
 </body>
 </html>

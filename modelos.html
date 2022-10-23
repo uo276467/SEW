@@ -16,21 +16,24 @@
     <title>Embers.js - Modelos</title>
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
 </head>
 
 <body>
     <!-- Datos con el contenidos que aparece en el navegador -->
     <header>
         <h1>Embers.js</h1>
+        <picture>
+            <img id="logo" src="multimedia/emberjs.png" alt="Embers.js">
+        </picture>
+        <p>Un framework productivo</p>
     </header>
-    <aside>
-        <nav>
-            <a title="Principal" accesskey="P" tabindex="1" href="index.html">Página principal</a>
-            <a title="Conceptos" accesskey="C" tabindex="2" href="conceptos.html">Conceptos</a>
-            <a title="Modelos" accesskey="M" tabindex="3" href="modelos.html">Modelos</a>
-            <a title="Formulario" accesskey="F" tabindex="4" href="formulario.html">Formulario</a>
-        </nav>
-    </aside>
+    <nav>
+        <a title="Principal" accesskey="P" tabindex="1" href="index.html">Página principal</a>
+        <a title="Conceptos" accesskey="C" tabindex="2" href="conceptos.html">Conceptos</a>
+        <a title="Modelos" accesskey="M" tabindex="3" href="modelos.html">Modelos</a>
+        <a title="Formulario" accesskey="F" tabindex="4" href="formulario.html">Formulario</a>
+    </nav>
     <main>
         <section>
             <h2>Modelos</h2>
@@ -85,11 +88,37 @@
                 </tbody>
             </table>
         </section>
+        <section>
+            <h3>Liquid fire</h3>
+            <p>Liquid Fire proporciona soporte de animación para aplicaciones Ember. Las características incluyen
+                transiciones animadas entre rutas y entre modelos dentro de una sola ruta. Proporciona un DSL para
+                solidificar las relaciones de ruta espacial, separadas limpiamente de los detalles de implementación
+                de la capa de vista. Un ejemplo sería animar una transición de pantalla para que la nueva
+                pantalla parezca deslizarse desde un borde del navegador.
+            </p>
+        </section>
     </main>
+    <aside>
+        <article>
+            <h3>Ember 4.7 Lanzado</h3>
+            <p>5 sept 2022</p>
+            <p>Hoy el proyecto ember está lanzando la versión 4.7 de Embers.js, Embers Data y Ember CLI.</p>
+        </article>
+        <article>
+            <h3>Ember 4.6 Lanzado</h3>
+            <p>29 jul 2022</p>
+            <p>Hoy el proyecto ember está lanzando la versión 4.6 de Embers.js, Embers Data y Ember CLI.</p>
+        </article>
+    </aside>
     <footer>
-        <picture>
-            <img src="multimedia/emberjs.png" alt="Embers.js">
-        </picture>
+        <audio controls>
+            <source src="multimedia/background_music1.mp3" type="audio/mpeg">
+            <source src="multimedia/background_music1.wav" type="audio/mpeg">
+        </audio>
+        <br>
+        <address id="autor">
+            Página web hecha por Daniel Suárez de la Roza
+        </address>
     </footer>
 </body>
 </html>

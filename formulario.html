@@ -17,39 +17,47 @@
     <title>Embers.js - Formulario</title>
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
 </head>
 
 <body>
     <!-- Datos con el contenidos que aparece en el navegador -->
     <header>
         <h1>Embers.js</h1>
+        <picture>
+            <img id="logo" src="multimedia/emberjs.png" alt="Embers.js">
+        </picture>
+        <p>Un framework productivo</p>
     </header>
-    <aside>
-        <nav>
-            <a title="Principal" accesskey="P" tabindex="1" href="index.html">Página principal</a>
-            <a title="Conceptos" accesskey="C" tabindex="2" href="conceptos.html">Conceptos</a>
-            <a title="Modelos" accesskey="M" tabindex="3" href="modelos.html">Modelos</a>
-            <a title="Formulario" accesskey="F" tabindex="4" href="formulario.html">Formulario</a>
-        </nav>
-    </aside>
+    <nav>
+        <a title="Principal" accesskey="P" tabindex="1" href="index.html">Página principal</a>
+        <a title="Conceptos" accesskey="C" tabindex="2" href="conceptos.html">Conceptos</a>
+        <a title="Modelos" accesskey="M" tabindex="3" href="modelos.html">Modelos</a>
+        <a title="Formulario" accesskey="F" tabindex="4" href="formulario.html">Formulario</a>
+    </nav>
     <main>
         <section>
             <h2>Formulario</h2>
             <p>Cuéntanos tu experiencia con Embers.js</p>
             <form name="formulario" id="form">
-                <p><label for="nom">Nombre:</label><input id="nom" type="text"></p>
-                <p><label for="ape">Apellidos:</label><input id="ape" type="text"></p>
-                <p><label for="cor">Correo:</label><input id="cor" type="text"></p>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <p><label for="nom">Nombre:</label><input id="nom" type="text"></p>
+                    <p><label for="ape">Apellidos:</label><input id="ape" type="text"></p>
+                    <p><label for="cor">Correo:</label><input id="cor" type="text"></p>
+                </fieldset>
+                <br>
                 <fieldset>
                     <legend>Género</legend>
                     <p><label for="mas"></label><input id="mas" type="radio" name="genero">Masculino
                     <label for="fem"></label><input id="fem" type="radio" name="genero">Femenino
                     <label for="otr"></label><input id="otr" type="radio" name="genero">Otro</p>
                 </fieldset>
-                <p><label>¿Cuáles de las siguientes características crees que mejor describen
-                a Embers.js según tu experiencia?</label></p>
+                <br>
                 <fieldset>
-                    <legend>Puedes elegir más de una opción</legend>
+                    <legend>Experiencia personal</legend>
+                    <p>¿Cuáles de las siguientes características crees que mejor describen
+                        a Embers.js según tu experiencia?</p>
                     <p><label for="int"></label><input id="int" type="checkbox" value="Intuitivo">Intuitivo</p>
                     <p><label for="fle"></label><input id="fle" type="checkbox" value="Flexible">Flexible</p>
                     <p><label for="com"></label><input id="com" type="checkbox" value="Cómodo">Cómodo</p>
@@ -58,16 +66,36 @@
                     <p><label for="coh"></label><input id="coh" type="checkbox" value="Coherente">Coherente</p>
                     <p><label for="org"></label><input id="org" type="checkbox" value="Organizado">Organizado</p>
                 </fieldset>
-                <p>Observaciones:</p>
-                <p><label for="texta"></label><textarea id="texta" cols="20" rows="10"></textarea></p>
+                <br>
+                <fieldset>
+                    <legend>Observaciones</legend>
+                    <p><label for="texta"></label><textarea id="texta" cols="20" rows="10"></textarea></p>
+                </fieldset>
                 <p><input type="button" id="env" value="Enviar"></p>
             </form>
         </section>
     </main>
+    <aside>
+        <article>
+            <h3>Ember 4.7 Lanzado</h3>
+            <p>5 sept 2022</p>
+            <p>Hoy el proyecto ember está lanzando la versión 4.7 de Embers.js, Embers Data y Ember CLI.</p>
+        </article>
+        <article>
+            <h3>Ember 4.6 Lanzado</h3>
+            <p>29 jul 2022</p>
+            <p>Hoy el proyecto ember está lanzando la versión 4.6 de Embers.js, Embers Data y Ember CLI.</p>
+        </article>
+    </aside>
     <footer>
-        <picture>
-            <img src="multimedia/emberjs.png" alt="Embers.js">
-        </picture>
+        <audio controls>
+            <source src="multimedia/background_music1.mp3" type="audio/mpeg">
+            <source src="multimedia/background_music1.wav" type="audio/mpeg">
+        </audio>
+        <br>
+        <address id="autor">
+            Página web hecha por Daniel Suárez de la Roza
+        </address>
     </footer>
 </body>
 </html>
