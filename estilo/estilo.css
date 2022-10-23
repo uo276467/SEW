@@ -2,46 +2,152 @@
 Daniel Suárez - UO276467
 Descripción de los estilos
 **************************/
+
+/*Especificad 1*/
+header {
+    background-color: lightblue;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-style: solid;
+    border-color: darkblue;
+    border-radius: 0em;
+    -webkit-border-radius: 2em;
+}
+
+/*Especifidad 1*/
+h1{
+    font-size: 2em;
+}
+
+/*Especificad 2*/
+header p{
+    font-size: 1em;
+    font-style: italic;
+}
+
+/*Especifidad 2*/
+header img {
+    width: 3em;
+}
+
+/*Especificad 1*/
+nav{
+    background-color: lightcyan;
+    font-size: 2em;
+    text-align: center;
+    border-style: solid;
+    border-color: hotpink;
+    border-radius: 0em;
+    -webkit-border-radius: 2em;
+}
+
+/*Especificad 1*/
 body {
     font-family: 'Times New Roman', Times, serif;
     color:black;
-    text-align: justify;
+    background-color: pink
 }
-header {
-    background-color: #FF5733;
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-}
-aside {
-    background-color: antiquewhite;
-    font-size: 2em;
-    text-align: center;
-}
-nav{
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    border-style: dotted;
-    border-color: blue;
-}
+
+/*Especificad 1*/
 main {
-    background-color:ivory;
+    font-family: Arial, Helvetica, sans-serif;
 }
-section {
-    background-color:lemonchiffon;
+
+/*Especificad 2*/
+body section{
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
 }
-h2#fyd {
-    background-color:cornflowerblue;
+
+/*Especifidad 2*/
+section p{
+    padding-inline-start: 1em;
 }
+
+/*Especifidad 2*/
+section video{
+    width: 40em;
+    padding-inline-start: 1em;
+}
+
+/*Especifidad 2*/
+section footer{
+    font-style: italic;
+    background-color: pink;
+}
+
+/*Especificad 1*/
+h2, h3{
+    font-size: 2em;
+    font-style: italic;
+    background-color: antiquewhite;
+}
+
+/*Especificad 1*/
 ul {
-    display: block;
     list-style-type:circle;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    padding-inline-start: 40px;
+    padding-inline-start: 4em;
 }
+
+
+/*Especificad 1*/
+aside{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: plum;
+    border-style: solid;
+    border-color: hotpink;
+    border-radius: 0em;
+    -webkit-border-radius: 2em;
+}
+
+/*Especifidad 2*/
+aside article{
+    margin-inline-start: 0.7em;
+}
+
+/*Especificad 2*/
+aside h3{
+    font-size: 1.2em;
+    background-color: plum;
+}
+
+/*Especificad 1*/
+table{
+    border-collapse: collapse;
+}
+
+/*Especificad 1*/
+table, th, td{
+    border: 0.05em solid black;
+}
+
+/*Especificad 2*/
+table caption{
+    background-color: bisque;
+    border: 0.05em solid black;
+}
+
+/*Especificad 12*/
+tbody tr:nth-child(odd) {
+    background-color:beige;
+}
+
+/*Especificad 12*/
+tbody tr:nth-child(even) {
+    background-color: bisque;
+}
+
+/*Especificad 1*/
 footer{
-    background-color:khaki;
+    background-color: lightblue;
+    font-style: italic;
 }
+
+/*Especificad 1*/
+audio, address{
+    margin-inline: 1em;
+}
+
+
 
 
