@@ -5,7 +5,7 @@ Descripción de los estilos
 
 /*Especificad 1*/
 header {
-    background-color: lightblue;
+    background-color: #aaeafa;
     font-size: 1.5em;
     font-weight: bold;
     border-style: solid;
@@ -145,7 +145,8 @@ footer{
 
 /*Especificad 1*/
 audio, address{
-    margin-inline: 1em;
+    margin-inline-start: 1em;
+    margin-top: 0.5em;
 }
 
 

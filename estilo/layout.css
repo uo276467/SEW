@@ -6,7 +6,7 @@ Descripción de los estilos
 /*Especifidad 1*/
 body {
     display: grid;
-    grid-template-columns: [col1] auto [col2] auto [col3] 20%;
+    grid-template-columns: [col1] 38.5em [col2] 38.5em [col3] 15em;
     grid-template-rows: [row1] 15em [row2] 3em [row3] auto [row4] 6em;
     grid-template-areas: 
     "header header header"
