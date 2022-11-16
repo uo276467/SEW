@@ -23,6 +23,7 @@ header{
   background-color: mediumorchid;
   grid-area: texto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   gap: 1em 1em;
