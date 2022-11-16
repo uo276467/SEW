@@ -1,0 +1,73 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: [col1] 6.5em [col2] 6.5em [col3] 6.5em [col4] 6.5em [col5] 6.5em;
+  grid-template-rows: [row1] 6.5em [row2] 6.5em [row3] 6.5em [row4] 6.5em [row5] 6.5em [row6] 6.5em;
+  grid-template-areas:
+  "texto texto texto texto texto"
+  "opciones opciones opciones opciones opciones"
+  "numeros numeros numeros operaciones operaciones"
+  "numeros numeros numeros operaciones operaciones"
+  "numeros numeros numeros operaciones operaciones"
+  "numeros numeros numeros operaciones operaciones";
+  gap: 1em 1em;
+}
+
+header{
+  background-color: mediumorchid;
+  grid-area: texto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1em 1em;
+}
+
+nav{
+  grid-area: opciones;
+  display: grid;
+  grid-template-columns: [col1] 6em [col2] 6em [col3] 6em [col4] 6em [col5] 6em;
+  grid-template-rows: [row1] 6em;
+  gap: 1em 1.2em;
+  justify-content: center;
+  align-content: center;
+}
+
+section{
+  background-color: khaki;
+  grid-area: numeros;
+  display: grid;
+  grid-template-columns: [col1] 6em [col2] 6em [col3] 6em;
+  grid-template-rows: [row1] 6em [row2] 6em [row3] 6em [row4] 6em;
+  gap: 1em 1em;
+  justify-content: center;
+  align-content: center;
+}
+
+aside{
+  grid-area: operaciones;
+  display: grid;
+  grid-template-columns: [col1] 6em [col2] 6em;
+  grid-template-rows: [row1] 6em [row2] 6em [row3] 6em [row4] 6em;
+  gap: 1em 1em;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+aside input[name="btnMas"]{
+  grid-row: span 2;
+}
+
+input[type=Button]{
+  font-size: 2em;
+}
+
+input[type=Text]{
+  font-size: 2.5em;
+  -webkit-border-radius: 2em;
+}
